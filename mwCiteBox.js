@@ -46,6 +46,12 @@ $(function() {
     var isBook = false;
     // check if on lesen.amazon.de ??? notebook
 
+/*
+// test to create a copyable image from the CiteBox 
+
+    $.getScript("//html2canvas.hertzen.com/dist/html2canvas.min.js");
+*/
+
 
     // Amazon Notebook:
     if (url.indexOf("amazon.de") >0  & url.indexOf("notebook") >0) {
@@ -74,7 +80,7 @@ $(function() {
     url = truncate (url,100,80,4,false);
 
     var citeBox = '<div id="mwCiteBox" style="display: block; position: fixed; z-index: 1; padding-top: 100px;left: 0;top: 0;width: 100%;height: 100%;overflow: auto;background-color: rgb(0,0,0);background-color: rgba(0,0,0,0.4);line-height: normal;">'+
-                '<div id="mwCiteBoxContent" style="margin: auto;padding: 20px;border: 1px solid #888;width: 40%;border-radius:5px;-moz-box-shadow:0 0 5px #888;-webkit-box-shadow:0 0 5px#888;box-shadow:0 0 5px #888;background:#eee;">'+
+                '<div id="mwCiteBoxContent" style="margin: auto;padding: 20px;border: 1px solid #888;width: 40%;border-radius:15px;-moz-box-shadow:0 0 15px #888;-webkit-box-shadow:0 0 15px#888;box-shadow:0 0 15px #888;background:#eee;">'+
                     '<div id="mwCiteBoxCite" style="color: #000; font-family: Times New Roman, Times, serif; font-size:20px;">»' + content + '«</div>';
     if (title!="") {
         citeBox+= '<div id="mwCiteBoxTitle" style="font-family: Arial, Helvetica, sans-serif;padding-top:10px;font-size:16px;">' + title + '</div>';
@@ -94,4 +100,13 @@ $(function() {
         $("#mwCiteBox").remove();
     });
     
+/*
+// test to create a copyable image from the CiteBox 
+    html2canvas(document.querySelector("#mwCiteBoxContent")).then(function(canvas) {
+        document.body.appendChild(canvas);
+        document.querySelector("#mwCiteBox").appendChild(canvas);
+        $("#mwCiteBoxContent").hide();
+
+    });
+*/
 });
