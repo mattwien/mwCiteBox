@@ -1,12 +1,9 @@
 # mwCiteBox (Beta)
-Bookmarklet to create a formated HTML box based on a selected browser text including the title of the page, it's author and URL. 
-The result can be used to e.g. post on a social network.
+mwCiteBox is a browser bookmarklet that creates a citation box. The purpose is to have a nicely formated text box that you can use to post on social media. In addition it holds additional features when used with notes form Amazon Kindle
 
-## Example
+![example screenshot of mwCiteBox](https://mattwien.github.io/mwCiteBox/mwCiteBox_Example.png)
+
+## Deatils, Example and more:
 You can test and install the bookmarklet on the [mwCiteBox page](https://mattwien.github.io/mwCiteBox/).
-
-## Additional Features:
-If you select a text on the notes summary page of Amazon Kindle (german version: [Kindle Notes](https://lesen.amazon.de/notebook) the Title and Author of the book are shown in the cite box instead of the page title.
-
 
 
