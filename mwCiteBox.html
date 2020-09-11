@@ -4,16 +4,15 @@
 <script sc="mwCiteBox.js"></script>
 <script>
 $(function() {
-    $('#mwCiteHighlightBtn').click(function(e) {
-        var highlightBtn = $("#mwCiteHighlightBtn");
+    $('.mwCiteHighlightBtn').on('click',(function(e) {
+            var highlightBtn = $("#mwCiteHighlightBtn");
+            var btnColor = $(this).css("background-color");
+            $("#mwCiteHighlight").css("background-color",(btnColor));
+            e.stopImmediatePropagation();
+            e.preventDefault();
 
-        var btnColor = highlightBtn.css("background-color");
-        highlightBtn.css("background-color", $("#mwCiteHighlight").css("background-color"));
-        $("#mwCiteHighlight").css("background-color",(btnColor));
-        e.stopImmediatePropagation();
-        e.preventDefault();
+        }));
 
-    });
 
     $('#mwCiteBox').click(function($this) {
         $("#mwCiteBox").remove();
@@ -70,7 +69,13 @@ $(function() {
         <div id="mwCiteBoxAuthor" style="font-family: Arial, Helvetica, sans-serif;padding-top:5px;color:#a49e99;font-size:14px;">author</div>
     </div>
     <div id="mwCiteBoxOptions" style="font-family: Arial, Helvetica, sans-serif;line-height: normal;margin: auto;padding-top: 10px;padding-bottom: 10px;padding-left: 20px;padding-right: 20px;border: 1px solid #888;width: 40%;border-radius:5px;-moz-box-shadow:0 0 5px #888;-webkit-box-shadow:0 0 5px#888;box-shadow:0 0 5px #888;background:#eee;">
-        <span id="mwCiteHighlightBtn" style="background-color:#eee;cursor: pointer; border: 1px solid #444;display: inline-block; padding: 4px 10px;">Change text highlight</span>
+        <span style="align-content:center;">Change text highlight:</span>
+    
+        <span class="mwCiteHighlightBtn" style="vertical-align:text-bottom;border-radius:16px; border:1px solid #888;display:inline-block;cursor: pointer; text-decoration: none; padding: 10px ; background-color:#eee"> </span>
+        <span class="mwCiteHighlightBtn" style="vertical-align:text-bottom;border-radius:16px; border:1px solid #888;display:inline-block;cursor: pointer; text-decoration: none; padding: 10px ; background-color:#A3C4FF"> </span>
+        <span class="mwCiteHighlightBtn" style="vertical-align:text-bottom;border-radius:16px; border:1px solid #888;display:inline-block;cursor: pointer; text-decoration: none; padding: 10px ; background-color:#FFC2F5"> </span>
+        <span class="mwCiteHighlightBtn" style="vertical-align:text-bottom;border-radius:16px; border:1px solid #888;display:inline-block;cursor: pointer; text-decoration: none; padding: 10px ; background-color:#f2e366"> </span>
+        <span class="mwCiteHighlightBtn" style="vertical-align:text-bottom;border-radius:16px; border:1px solid #888;display:inline-block;cursor: pointer; text-decoration: none; padding: 10px ; background-color:#FCB85E"> </span>
     </div>
 
 
