@@ -1,6 +1,6 @@
 ## Welcome to the mwCiteBox test page
 ### About mwCiteBox Bookmarklet
-mwCiteBox is a browser bookmarklet that creates a citation box. The purpose is to have a nicely formated text box that you can use to post on social media. In addition it holds features when used with notes form Amazon Kindle (when accessing the page [lesen.amazon.de/notebook](https://lesen.amazon.de/notebook) or [read.amazon.com/notebook](https://read.amazon.com/notebook)).
+mwCiteBox is a browser bookmarklet that creates a citation box. The purpose is to have a nicely formatted text box that you can use to post on social media. In addition it holds features when used with notes form Amazon Kindle (when accessing the page [lesen.amazon.de/notebook](https://lesen.amazon.de/notebook) or [read.amazon.com/notebook](https://read.amazon.com/notebook)).
 
 The citation box contains the text you highlighted on the current web page and in addition:
 
@@ -12,7 +12,7 @@ The citation box contains the text you highlighted on the current web page and i
 **When on a normal web page:**
 - The tile of the web page
 - The author (if the respective meta tag is available)
-- The adress (URL) of the web page
+- The address (URL) of the web page
 
 To make the box more convenient title and adress are truncated.
 
@@ -32,9 +32,10 @@ You can simply drag and drop the link below to your browser's bookmark bar to in
 A bookmarklet is a short JavaScript program that can be stored in your browsers bookmark. For more details see [Wikipedia](https://en.wikipedia.org/wiki/Bookmarklet).
 
 
-To create a bookmarklet on your own, I recommend to use a bookmarklet maker like: [Bookmarklet Maker](https://bookmarklets.org/maker/). Make sure that you select to include jquery into the bookmarklet.
+To create a bookmarklet on your own, I recommend to use a bookmarklet maker like: [Bookmarklet Maker](https://bookmarklets.org/maker/). Make sure that you select to include jQuery into the bookmarklet.
 
 
 ### Support or Contact
+The tool is provided as is, no support is provided.
 
-Having trouble? ...
+If you have feature requests or like to contribute, contact me on Twitter: https://twitter.com/mattwien 
