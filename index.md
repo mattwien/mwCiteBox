@@ -1,4 +1,4 @@
-## Welcome to the mwCiteBox test page
+## Welcome to mwCiteBox
 ### About mwCiteBox Bookmarklet
 mwCiteBox is a browser bookmarklet that creates a citation box. The purpose is to have a nicely formatted text box that you can use to post on social media. Main purpose is to use it with notes from  your Kindle that you can access on the [Amazon Kindle Notebook](https://read.amazon.com/notebook) page. It also works with many other web-pages, but cannot be guarantueed.
 
